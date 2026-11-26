@@ -1,0 +1,26 @@
+[
+    {
+       "id":1,
+       "titulo": "Informática Básica",
+       "descrição": "Domine o uso do computador e aplicativos essenciais",
+       "cargaHoraria": 30,
+       "img": "../IMAGES/InformáticaBásica.jpg"
+    },
+
+    {
+       "id":2,
+       "titulo": "Desenvolvimento WEB",
+       "descrição": "AprendA HTML,CSS JS e práticas modernas em de desenvolvimento",
+       "cargaHoraria": 40,
+       "img": "../IMAGES/DesenvolvimentoWEB.png"
+    },
+
+        {
+       "id":3,
+       "titulo":"Jogos Digitais",
+       "descrição": "Aprenda a desenvolver jogos digitais desde o design até a programação.",
+       "cargaHoraria": 60,
+       "img": "../IMAGES/JogosDigitais.jpg"
+    }
+
+]

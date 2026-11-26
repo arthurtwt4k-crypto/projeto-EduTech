@@ -5,13 +5,13 @@ body{
     font-family: Arial, Helvetica, sans-serif; 
     margin: 0;
     padding: 0;
-    color: black;
+    color: rgb(20, 57, 223);
     background-color: #ffffff;
     
 }
 
 h1,h2,h3{
-    color:#1a4db3;
+    color:#0a217c;
     text-align: center;
 }
 
@@ -23,18 +23,18 @@ p{
 /*CABECALHO E MENU*/
 
 header{
-     background-color: #243dc7; color: white; padding: 20px 0;
+     background-color: #0021dde0; color: rgb(241, 241, 241); padding: 20px 0;
 }
 
-.logo{
+.logo a{
     text-decoration: none;
-    color: rgb(192, 182, 182);
+    color: white;
     font-size: 24px;
     font-weight: bold;
 }
 
 .logo span{
-     color: #ffffff;
+     color: darkorange;
 }
 
 nav.menu{
@@ -62,7 +62,7 @@ nav.menu a:hover{
 
 .hero h1{
     font-size: 36px;
-    color: lab(35.56% 23 -58.69);
+    color: lab(39.53% 35.55 -73.73);
 }
 
 .hero p{
@@ -85,7 +85,7 @@ nav.menu a:hover{
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
-    border: 2px solid #1a4db3;
+    border: 2px solid #0453c9;
 }
 
 .btn-primario:hover, .btn-secundario:hover{
@@ -96,7 +96,7 @@ nav.menu a:hover{
     padding: 30px 20px;
 }
 
-.card{
+.card-curso{
      background-color: white;
      padding: 20px;
      margin: 12px 0;
@@ -135,11 +135,17 @@ footer a{
     margin: 15px 0;
     border: 1px solid #ddd;
     border-radius: 8px;
+    text-decoration: none;
+    color:black;
 }
 
 .curso img{
-    max-width: 100%;
-    height: auto;
+    width:100%; /* Ocupa toda a largura do card */
+    height: 140px; /* Altura padrão para todas imagens*/
+    object-fit: contain;/*Mostra a imagem INTEIRA */
+    background-color: #ffffff; /*Cor de fundo */
+    border-radius: 6px; /*Bordas arrendodas */
+    margin-top: 10px;/*Margem em cima da imagem */
 }
 
 input, textarea{
@@ -203,4 +209,55 @@ button{
 }
 #containerFormContato{
     text-align: center;
+}
+/* PÁGINA CONTATO */
+input,textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus{
+    outline:2px solid #1a4db3;
+}
+
+button{
+    background-color: #ff6a00;
+    color:#f5f5f5;
+    border-radius: 8px;
+    border:none;
+    padding: 10px 20px;
+    cursor:pointer;
+}
+
+.contato{
+    text-align: center;
+}
+
+.contatoForm {
+    max-width: 500px;  /* Pode ocupar até 500px do container */
+    margin:0 auto; /* Sem margin - auto ajustável */
+    display:flex; /* Ativa o Flexbox no container do form */
+    flex-direction: column; /* Alinha os elementos em coluna */
+    gap: 10px; /* Espaço de 10px entre os elementos do form */
+}
+
+/* PÁGINAS DE LOGIN E CADASTRO */
+.cadastro, .login{
+    padding: 40px 20px;
+}
+
+.loginForm,.cadastroForm {
+    max-width: 500px;
+    margin:0 auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.234);
+    gap: 10px;
 }
